@@ -30,10 +30,10 @@ REP_bib_art <- 'bibliografia_articulos.bib'
 REP_bib_ley <- 'bibliografia_leyes.bib'
 
 
-REP_tit <- 'ESTUDIO TÉCNICO PARA ESTABLECER LAS RESERVAS PARA PRÉSTAMOS HIPOTECARIOS ADMINISTRADOS POR EL IESS'
-REP_nom_seg <- 'Préstamos Hipotecarios'
+REP_tit <- 'ESTUDIO PARA PRÉSTAMOS QUIROGRAFARIOS E HIPOTECARIOS POR EL IESS'
+REP_nom_seg <- 'Préstamos Quirografarios e Hipotecarios'
 REP_seg <- switch( parametros$seguro,
-                  'HIP' = 'Préstamos Hipotecarios') 
+                  'PQ_PH' = 'Préstamos Quirografarios e Hipotecarios') 
   
 paste( 'Seguro', parametros$seguro )
 REP_fec_fin <- format( parametros$fec_fin, '%Y-%m-%d' )

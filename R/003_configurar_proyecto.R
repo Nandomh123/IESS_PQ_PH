@@ -24,7 +24,7 @@ parametros$opsys <- Sys.info()[[1]]
 parametros$hostname <- Sys.info()[[4]]
 
 #Servidor de datos HIP
-parametros$data_server <- 'Y:/IESS_2022_Hipotecarios/'
+parametros$data_server <- 'Y:/IESS_PQ_PH/'
 
 
 # local
@@ -42,7 +42,6 @@ parametros$iess_blue   <- rgb( 48, 129, 201, maxColorValue = 255 )
 parametros$iess_blue_1 <- rgb( 34, 117, 191, maxColorValue = 255 )
 parametros$iess_green   <- rgb( 188,214,237, maxColorValue = 255 )
 parametros$iess_green_1 <- rgb( 149, 168, 186, maxColorValue = 255 )
-
 parametros$iess_total <- rgb( 138, 5, 81, maxColorValue = 255 )
 
 # Calcular balance
@@ -55,7 +54,7 @@ message( '\tEstableciendo directorios globales' )
 parametros$empresa <- 'IESS'
 
 message( '\tConfiguración seguro' )
-parametros$seguro <- 'HIP'
+parametros$seguro <- 'PQ_PH'
 
 
 # Configuraciones particulares por seguro ----------------------------------------------------------
@@ -80,7 +79,7 @@ parametros$reporte_seguro <- paste0( parametros$work_dir, 'Reportes/Reporte_',
                                      parametros$seguro, '/' )
 
 
-parametros$reporte_genera <- paste0( parametros$work_dir, 'R/HIP/600_reporte_latex_hip.R' )
+parametros$reporte_genera <- paste0( parametros$work_dir, 'R/PQ_PH/600_reporte_latex_hip.R' )
 
 parametros$reporte_script <- paste0( parametros$reporte_seguro, 'reporte.R' )
 parametros$reporte_nombre <- paste0( parametros$empresa, '_', 
